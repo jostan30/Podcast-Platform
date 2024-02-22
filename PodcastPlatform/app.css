@@ -1,0 +1,131 @@
+:root {
+    --primary-color: #003366;
+    --secondary-color: #F9F9F9;
+    --accent-color: #D4AF37;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+.navigation ul {
+    list-style: none;
+    text-align: center;
+    padding: 20px;
+}
+
+.navigation ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.navigation ul li a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.hero-section {
+    background-image: linear-gradient(to right, var(--primary-color), var(--accent-color));
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.featured-podcasts, .about-podwave, .ai-recommendations {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.podcast-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+footer {
+    background-color: #121313;
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
+
+@media (max-width: 1024px) {
+    .podcast-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .podcast-grid {
+        grid-template-columns: 1fr;
+    }
+}
+#recommendations {
+    background-color: #bfcdda;
+    color: #F9F9F9;
+    padding: 20px;
+    border-radius: 110px;
+    margin: 20px;
+  }
+  #recommendedPodcasts {
+    display: flex;
+    padding-left: 124px;
+    flex-wrap: wrap;
+    padding: 85px;
+    gap: 20px;
+  }
+ h2 {
+    text-align: center;
+  }
+  .podcast {
+    width: 250px;
+    padding: 10px;
+    background-color: #7c8b9c;
+    border-radius: 8px;
+  }
+  .podcast img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+  }
+  .podcast h3 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-family: 'Roboto Bold', sans-serif;
+  }
+  .podcast p {
+    margin: 0;
+  }
+
+  /* CSS for recommendation section */
+  /* #recommendations {
+    background-color: #003366;
+    color: #F9F9F9;
+    padding: 20px;
+    border-radius: 56px;
+    margin: 20px;
+    
+  }
+  h2 {
+    font-family: 'Roboto Bold', sans-serif;
+  }
+  .podcast {
+    margin-bottom: 10px;
+  }
+  .podcast img {
+    width: 100px;
+    height: 100px;
+    border-radius: 4px;
+  }
+  .podcast h3 {
+    margin-top: 0;
+  } */
